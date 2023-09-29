@@ -1,0 +1,8 @@
+.header-logo {
+  max-width: 100px;
+  max-height: 50px;
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 9999; /* optional: ensure it appears above other elements */
+}

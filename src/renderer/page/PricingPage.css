@@ -1,0 +1,119 @@
+.pricing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #36393f; /* Discord dark theme */
+  color: #ffffff;
+  height: 95vh;
+}
+
+.pricing-page__title {
+font-size: 2em;
+margin-bottom: 20px;
+}
+
+.pricing-page__plans {
+display: flex;
+justify-content: space-around;
+width: 100%;
+}
+
+.plan {
+border: 1px solid #7289da;
+border-radius: 10px;
+padding: 20px;
+width: 30%;
+background-color: #2f3136;
+position: relative;
+transition: transform .3s ease;
+}
+
+.plan:hover {
+transform: scale(1.05);
+}
+
+.plan.popular {
+border-color: #f04747; /* Discord red */
+}
+
+.popular-badge {
+position: absolute;
+top: -10px;
+left: -10px;
+background-color: #f04747;
+padding: 5px 10px;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.8em;
+}
+
+.plan__title {
+font-size: 1.5em;
+margin-bottom: 10px;
+}
+
+.plan__price {
+font-size: 2em;
+font-weight: bold;
+margin-bottom: 10px;
+color: #7289da;
+}
+
+.plan__period {
+margin-bottom: 20px;
+color: #b9bbbe; /* Discord gray */
+}
+
+.plan__benefits {
+list-style: none;
+padding: 0;
+margin-bottom: 20px;
+}
+
+.plan__benefits li:before {
+content: '✔'; /* Unicode checkmark */
+margin-right: 10px;
+color: #43b581; /* Discord green */
+}
+
+.plan__button {
+background-color: #7289da;
+border: none;
+color: white;
+padding: 15px 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color .3s ease;
+}
+
+.plan__button:hover {
+background-color: #5b6dae;
+}
+
+.plan__price-container {
+display: flex;
+justify-content: center; /* Center align the prices */
+margin-bottom: 10px;
+}
+
+.plan__price {
+font-size: 2em;
+font-weight: bold;
+color: #7289da;
+margin: 0;
+}
+
+.plan__price--main {
+text-decoration: line-through;
+margin-right: 10px;
+}
+
+.plan__price--discounted {
+font-size: 1.5em;
+color: #f04747;
+}

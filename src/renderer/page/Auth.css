@@ -1,0 +1,76 @@
+body {
+    --accent-color: #00c6ff;
+    --button-hover-start: #0072ff;
+    --button-hover-end: #00c6ff;
+    --bookmarks-sidebar-background-light: #1F2937;
+    --bookmarks-sidebar-background-dark: #1F2937;
+    --bookmarks-sidebar-text-light: #f5f1f1;
+    --bookmarks-sidebar-text-dark: #f5f1f1;
+    --modal-background: #1F2937;
+    --avatar-border: #121212;
+    --details-background: linear-gradient(135deg, #000000, #0a2648);
+    --settings-button-background: linear-gradient(135deg, #000000, #0a2648);
+    --button-disabled: #8eb1e6;
+    --text-color: #f5f1f1;
+    background-color: #1F2937;
+    color: #f5f1f1;
+  }
+  
+  .auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #1F2937;
+    color: #f5f1f1;
+  }
+  
+  .auth-form button {
+    width: 100%;
+    background: var(--settings-button-background);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .auth-form button:hover {
+    background-image: linear-gradient(to right, var(--button-hover-start), var(--button-hover-end));
+  }
+  
+  .auth-toggle {
+    color: var(--accent-color);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .auth-toggle:hover {
+    text-decoration: none;
+    color: var(--button-hover-end);
+  }
+  

@@ -1,0 +1,70 @@
+:root {
+  --color1: #5865f2e7;
+  --color2: #424549;
+  --color3: #36393e;
+  --color4: #282b30;
+  --color5: #1e2124;
+}
+
+.deck-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: var(--color1);
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.025rem;
+}
+
+.deck-title {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.deck-header-notification {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.deck-header-delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.deck-header-arrow-left,
+.deck-header-arrow-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.deck-header-notification:hover,
+.deck-header-delete:hover,
+.deck-header-arrow-left:hover,
+.deck-header-arrow-right:hover {
+  color: var(--color3);
+}

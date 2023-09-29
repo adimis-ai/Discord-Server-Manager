@@ -1,0 +1,45 @@
+.empty-deck {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 800px;
+  margin: 10px;
+  padding: 10px;
+  border: rgba(0, 0, 0, 0.2) solid 1px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+.empty-deck:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.empty-deck-button {
+  font-size: 20px;
+  padding: 10px 20px;
+  color: white;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.empty-deck-button:hover {
+  background-color: #0056b3;
+}
+
+.empty-deck-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}

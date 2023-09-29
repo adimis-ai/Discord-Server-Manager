@@ -1,0 +1,84 @@
+:root {
+  --bookmarks-sidebar-border: #7289da;
+  --bookmarks-sidebar-close-button-bg: #424549;
+  --bookmarks-sidebar-close-button-color: #ffffff;
+  --bookmarks-sidebar-close-button-hover-start: #36393e;
+  --bookmarks-sidebar-close-button-hover-end: #282b30;
+}
+
+.bookmarks-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  background-color: #1e2124;
+  color: black;
+  z-index: 100000;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: solid 1px var(--bookmarks-sidebar-border);
+  border-radius: 10px;
+}
+
+.bookmarks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmarks-sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.bookmarks-sidebar::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}
+
+.bookmarks-sidebar::-webkit-scrollbar-thumb {
+  background-color: var(--bookmarks-sidebar-border);
+  border-radius: 8px;
+}
+
+.bookmarks-sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--bookmarks-sidebar-close-button-hover-start);
+}
+
+body.dark .bookmarks-sidebar {
+  background-color: #36393e;
+  color: white;
+}
+
+body.light .bookmarks-sidebar {
+  background-color: #ffffff;
+  color: #424549;
+}
+
+.bookmarks-sidebar.open {
+  transform: translateX(0);
+}
+
+.bookmarks-sidebar-close-button {
+  background-color: var(--bookmarks-sidebar-close-button-bg);
+  color: var(--bookmarks-sidebar-close-button-color);
+  padding: 5px 10px;
+  border: solid 1px var(--bookmarks-sidebar-close-button-bg);
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.bookmarks-sidebar-close-button:hover {
+  background-image: linear-gradient(to right, var(--bookmarks-sidebar-close-button-hover-start), var(--bookmarks-sidebar-close-button-hover-end));
+}
